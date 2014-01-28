@@ -50,7 +50,6 @@ au FileType python set fo+=t
 set autoindent
 set smartindent
 
-
 " Options for minibufexpl
 let g:miniBufExplMapWindowNavVim = 1 
 let g:miniBufExplMapWindowNavArrows = 1 
@@ -93,25 +92,22 @@ set number
 "set rtp+=/Users/yikelu/.vim/bundle/powerline/bindings/vim
 set laststatus=2
 
+set statusline=[%t]\       "tail of the filename
+set statusline+=[%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 " GVim only
 if has("gui_running")
     colorscheme kib_darktango
-    python from powerline.vim import setup as powerline_setup
-    python powerline_setup()
-    python del powerline_setup
-else
-    set statusline=[%t]\       "tail of the filename
-    set statusline+=[%{&ff}] "file format
-    set statusline+=%h      "help file flag
-    set statusline+=%m      "modified flag
-    set statusline+=%r      "read only flag
-    set statusline+=%y      "filetype
-    set statusline+=%=      "left/right separator
-    set statusline+=%c,     "cursor column
-    set statusline+=%l/%L   "cursor line/total lines
-    set statusline+=\ %P    "percent through file
 endif
 
 " Mac Section
@@ -121,11 +117,12 @@ if has("unix")
         set macmeta
         set guifont=Anonymous\ Pro\ for\ Powerline:h12'
     else
-        set guifont=Terminess\ Powerline\ Bold\ 9
+        set guifont=Terminus\ 9
     endif
 endif
 
-set list lcs=tab:\¦\ 
+set list lcs=tab:\┊\ 
 
-let g:indentLine_enabled = 1
 let g:indentLine_indentLevel = 6
+let g:indentLine_char = "┊"
+let g:indentLine_color_gui = 'grey'
