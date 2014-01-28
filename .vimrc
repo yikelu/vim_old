@@ -124,3 +124,8 @@ if has("unix")
         set guifont=Terminess\ Powerline\ Bold\ 9
     endif
 endif
+
+set list lcs=tab:\¦\ 
+
+let g:indentLine_enabled = 1
+let g:indentLine_indentLevel = 6
