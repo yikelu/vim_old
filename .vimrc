@@ -123,6 +123,6 @@ endif
 
 set list lcs=tab:\┊\ 
 
-let g:indentLine_indentLevel = 6
+let g:indentLine_indentLevel = 4
 let g:indentLine_char = "┊"
-let g:indentLine_color_gui = 'grey'
+let g:indentLine_color_gui = "gray30"
