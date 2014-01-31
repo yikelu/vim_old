@@ -92,10 +92,9 @@ set number
 "set rtp+=/Users/yikelu/.vim/bundle/powerline/bindings/vim
 set laststatus=2
 
-set statusline=[%t]\       "tail of the filename
+set statusline=[%m%t]\       "modified? tail of the filename
 set statusline+=[%{&ff}] "file format
 set statusline+=%h      "help file flag
-set statusline+=%m      "modified flag
 set statusline+=%r      "read only flag
 set statusline+=%y      "filetype
 set statusline+=%=      "left/right separator
