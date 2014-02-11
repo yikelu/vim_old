@@ -35,6 +35,7 @@ let g:pymode_rope_always_show_complete_menu = 1
 let g:pymode_indent = 1
 let g:pymode_syntax_space_errors = 0
 let g:pymode_lint_checker = "pylint"
+let g:pymode_paths = [$HOME . "/anaconda/lib/python2.7", $HOME . "/anaconda/lib/python2.7/site-packages"]
 
 " Tab based stuff
 set smarttab
@@ -88,6 +89,9 @@ set guioptions-=L
 set guioptions-=R
 set guicursor+=a:blinkon0
 set number
+
+set wildmode=longest,list,full " normal tab completion
+set wildmenu
 
 "set rtp+=/Users/yikelu/.vim/bundle/powerline/bindings/vim
 set laststatus=2
