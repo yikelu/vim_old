@@ -88,7 +88,6 @@ set guioptions-=r
 set guioptions-=L
 set guioptions-=R
 set guicursor+=a:blinkon0
-set number
 
 set wildmode=longest,list,full " normal tab completion
 set wildmenu
@@ -110,6 +109,7 @@ let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 " GVim only
 if has("gui_running")
+    set number
     colorscheme kib_darktango
 endif
 
@@ -129,3 +129,5 @@ set list lcs=tab:\┊\
 let g:indentLine_indentLevel = 4
 let g:indentLine_char = "┊"
 let g:indentLine_color_gui = "gray30"
+
+map <F2> :IndentLinesToggle<CR>:IndentLinesToggle<CR>
