@@ -107,10 +107,13 @@ set statusline+=\ %P    "percent through file
 
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
+"hi link EasyMotionTarget ErrorMsg
+hi link EasyMotionShade  Comment
 " GVim only
 if has("gui_running")
     set number
     colorscheme kib_darktango
+    hi link EasyMotionTarget Identifier
 endif
 
 " Mac Section
@@ -131,3 +134,4 @@ let g:indentLine_char = "┊"
 let g:indentLine_color_gui = "gray30"
 
 map <F2> :IndentLinesToggle<CR>:IndentLinesToggle<CR>
+
