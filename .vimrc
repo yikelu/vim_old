@@ -136,3 +136,7 @@ let g:indentLine_color_gui = "gray30"
 
 map <F2> :IndentLinesToggle<CR>:IndentLinesToggle<CR>
 
+cabbr ipy ConqueTermSplit ipython
+cabbr ipyv ConqueTermVSplit ipython
+cabbr ypy ConqueTermSplit ypy
+cabbr ypyv ConqueTermVSplit ypy

@@ -76,3 +76,6 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/conque"]
+	path = bundle/conque
+	url = https://github.com/oplatek/Conque-Shell.git
