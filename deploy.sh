@@ -7,3 +7,6 @@ git submodule init
 git submodule update
 git submodule foreach --recursive git submodule init
 git submodule foreach --recursive git submodule update
+
+cd extra/pyclewn/
+vimdir=$HOME/.vim python setup.py install --force --home=$HOME
