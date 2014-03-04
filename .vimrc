@@ -30,6 +30,7 @@ set completeopt=longest,menuone,preview
 
 map <leader>n :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode = 2
+let NERDTreeIgnore = ['\.pyc$']
 
 " Pymode baby!!!!
 let g:pymode_rope_always_show_complete_menu = 1
