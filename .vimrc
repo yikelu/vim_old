@@ -141,3 +141,6 @@ cabbr ipy ConqueTermSplit ipython
 cabbr ipyv ConqueTermVSplit ipython
 cabbr ypy ConqueTermSplit ypy
 cabbr ypyv ConqueTermVSplit ypy
+
+let $PYTHONPATH = $HOME . '/anaconda/lib/python2.7' 
+let $PYTHONPATH = $HOME . '/anaconda/lib/python2.7/site-packages:' . $PYTHONPATH 
