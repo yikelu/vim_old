@@ -79,3 +79,6 @@
 [submodule "bundle/conque"]
 	path = bundle/conque
 	url = https://github.com/oplatek/Conque-Shell.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

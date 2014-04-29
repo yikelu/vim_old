@@ -144,3 +144,9 @@ cabbr ypyv ConqueTermVSplit ypy
 
 let $PYTHONPATH = $HOME . '/anaconda/lib/python2.7' 
 let $PYTHONPATH = $HOME . '/anaconda/lib/python2.7/site-packages:' . $PYTHONPATH 
+
+let g:syntastic_python_checkers = []
+let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
